@@ -18,21 +18,9 @@ This project requires the following system dependencies:
 
 ## Running
 
-- First make a .env file on the root directory with the following keys and 
-
-*   POSTGRES_DB
-
-*   POSTGRES_USER
-
-*   POSTGRES_PASSWORD
-
-*   POSTGRES_HOST
-
-*   SECRET_KEY
-
-*   DEBUG
-
 -   `$ docker-compose up`  - This command utilizes docker to build(on initial run) and bring up the project and all its relevant services inside a container.
+
+-   `$ docker exec -it django bash`  - This would open up an interactive bash session inside the django container, cd into the projects src directory using `cd src` where you can now run migrations with `python manage.py migrate`.
 
 ## Other Useful Commands
 
